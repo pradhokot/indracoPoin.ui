@@ -1,0 +1,25 @@
+/* #sidebarBelanja {
+    height: calc(100% - 168.6px);
+} */
+
+#sidebarBelanja .list-group-item {
+    position: relative;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+}
+
+#sidebarBelanja .list-group-item::before {
+    content: "\e90b";
+    font-family: 'icomoon' !important;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    color: inherit;
+    opacity: .875;
+}
+
+#sidebarBelanja .list-group-item h1 {
+    font-size: inherit !important;
+    margin: 0;
+}

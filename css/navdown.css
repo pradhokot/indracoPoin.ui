@@ -1,0 +1,12 @@
+#navdown .nav-link {
+    font-size: .75rem;
+    opacity: .5;
+}
+
+#navdown .nav-link i {
+    font-size: 2em;
+}
+
+#navdown .nav-link.active {
+    opacity: 1;
+}

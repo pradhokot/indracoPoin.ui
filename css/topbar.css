@@ -1,0 +1,9 @@
+#topbar .nav-item {
+    min-width: 82px;
+}
+
+#topbar .nav-link {
+    padding: .5rem;
+    line-height: 1;
+    font-size: 1.5rem;
+}

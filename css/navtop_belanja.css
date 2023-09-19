@@ -1,0 +1,57 @@
+#navtopBelanja .nav-link {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: .5rem;
+    color: inherit;
+    position: relative;
+}
+
+#navtopBelanja .nav .nav-item:last-child .nav-link {
+    text-transform: capitalize;
+    padding: .5rem .75rem;
+    opacity: .5;
+}
+
+#navtopBelanja .nav-link h1 {
+    font-size: inherit !important;
+    margin: 0;
+}
+
+/* active nav-link */
+#navtopBelanja .nav-link::before {
+    content: "\e90a";
+    font-family: 'icomoon' !important;
+    color: #f0f0f0;
+    /* color: #fd4f00; */
+    font-size: 1rem;
+    line-height: 1;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all .36s;
+}
+
+#navtopBelanja .nav-link.active::before,
+#navtopBelanja .nav .nav-item:last-child .nav-link.active {
+    opacity: 1;
+}
+
+/* trigger sidebar belanja */
+#triggerSidebarBelanja .icon-trigger {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    transition: all .36s;
+}
+
+#triggerSidebarBelanja.active .icon-trigger {
+    transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+#navtopBelanja .nav .nav-item:last-child .nav-link.active.overlapse::before {
+    opacity: 0;
+}

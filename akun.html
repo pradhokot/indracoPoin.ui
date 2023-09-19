@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>INDRACO POIN &bull; UI Akun</title>
+    <!-- head links -->
+    <script src="components/head_links.js"></script>
+    <style>
+        * {
+            /* outline: solid 1px green; */
+            outline: solid 1px transparent;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- load topbar -->
+    <script src="components/topbar.js"></script>
+
+    <main class="wrapper">
+
+        <section class="border-0">
+            <div class="container d-flex flex-column row-gap-5">
+                <div class="row gx-3">
+                    <div class="col col-auto">
+                        <div class="ratio ratio-1x1 bg-light rounded-circle" style="width: 90px;">
+                            <img src="img/product/no_images.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h4 class="fw-medium fs-3 text-capitalize">Hi, <br> yoggi dhimas p.</h4>
+                        <span>
+                            Arabica Member <img src="img/svg/arabica.svg" width="auto" height="30" alt="">
+                        </span>
+                    </div>
+                    <div class="col col-auto">
+                        <a class="text-reset text-decoration-none" style="font-size: 1.75rem;" href="#">
+                            <i class="icon-edit"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="row justify-content-between gx-4">
+                    <div class="col">
+                        <div>Poin</div>
+                        <div class="fw-medium fs-3">Rp 33.822.000,-</div>
+                        <div>
+                            <a class="text-decoration-none" href="#">Isi Poin</a>
+                        </div>
+                    </div>
+                    <div class="col col-auto">
+                        <div>My Voucher</div>
+                        <div class="fw-medium fs-3">2</div>
+                        <div>
+                            <a class="text-decoration-none" href="#">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-0">
+            <nav class="list-group list-group-flush rounded-0 text-capitalize" style="border-top: solid 1px #dee2e6;">
+                <a class="list-group-item text-reset py-4 px-0" href="#">
+                    <div class="container">
+                        pusat bantuan
+                    </div>
+                </a>
+                <a class="list-group-item text-reset py-4 px-0" href="#">
+                    <div class="container">
+                        bahasa
+                    </div>
+                </a>
+                <a class="list-group-item text-reset py-4 px-0" href="#">
+                    <div class="container">
+                        pengaturan aplikasi
+                    </div>
+                </a>
+                <a class="list-group-item text-reset py-4 px-0" href="#">
+                    <div class="container">
+                        keluar
+                    </div>
+                </a>
+                <a class="list-group-item text-reset py-4 px-0" data-bs-toggle="modal" href="#modalRedeemPoin">
+                    <div class="container">
+                        klaim poin
+                    </div>
+                </a>
+            </nav>
+        </section>
+
+    </main>
+
+    <!-- modal redeem poin -->
+    <div class="modal fade" id="modalRedeemPoin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="modalRedeemPoinLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-0 bg-light">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-medium fs-5" id="modalRedeemPoinLabel">Redeem Code</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center d-flex flex-column row-gap-4">
+                    <input type="text" class="form-control form-control-lg rounded-0">
+                    <p class="text-capitalize">
+                        kartu hadiah & promosi code
+                        <br>
+                        <a class="text-decoration-none" style="color: #fd4f00;" href="#">Terms & Conditions</a>
+                    </p>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-lg rounded-0 bg-white text-dark w-100"
+                        data-bs-dismiss="modal">Cancel</button>
+                    <button class="btn btn-lg rounded-0 btn-dark w-100">Klaim Poin</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- load navdown -->
+    <script src="components/navdown.js"></script>
+
+    <!-- footer scripts -->
+    <script src="components/footer_scripts.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#navdown ul li:first-child a').addClass('active');
+        })
+    </script>
+
+</body>
+
+</html>
